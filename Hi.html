@@ -1,0 +1,180 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Example</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .btn-group {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .btn-group:hover .dropdown-menu {
+      display: block;
+    }
+    .dropdown-menu a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-menu a:hover {
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+  <div class="btn-group">
+    <a class="btn btn-primary" href="#"><i class="fa fa-user fa-fw"></i> User</a>
+    <a class="btn btn-primary dropdown-toggle" href="#">
+      <span class="fa fa-caret-down" title="Toggle dropdown menu"></span>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="#"><i class="fa fa-pencil fa-fw"></i> Edit</a></li>
+      <li><a href="#"><i class="fa fa-trash-o fa-fw"></i> Delete</a></li>
+      <li><a href="#"><i class="fa fa-ban fa-fw"></i> Ban</a></li>
+      <li class="divider"></li>
+      <li><a href="#"><i class="fa fa-unlock"></i> Make admin</a></li>
+    </ul>
+  </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Example</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .btn-group {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .btn-group input[type="checkbox"] {
+      display: none;
+    }
+    .btn-group input[type="checkbox"]:checked ~ .dropdown-menu {
+      display: block;
+    }
+    .dropdown-menu a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-menu a:hover {
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+    <!-- </section> -->
+        <!--<div class="users">
+            <div class="card">
+              <img src="../Applight/images/user2.jpg" >
+              <h4>Sam David</h4>
+              <p>Ui designer</p>
+              <div class="per">
+                <table>
+                  <tr>
+                    <td><span>85%</span></td>
+                    <td><span>87%</span></td>
+                  </tr>
+                  <tr>
+                    <td>Month</td>
+                    <td>Year</td>
+                  </tr>
+                </table>
+              </div>
+              <button>Profile</button>
+            </div>
+            <div class="card">
+              <img src="../Applight/images/user3.jpg">
+              <h4>Balbina kherr</h4>
+              <p>Progammer</p>
+              <div class="per">
+                <table>
+                  <tr>
+                    <td><span>82%</span></td>
+                    <td><span>85%</span></td>
+                  </tr>
+                  <tr>
+                    <td>Month</td>
+                    <td>Year</td>
+                  </tr>
+                </table>
+              </div>
+              <button>Profile</button>
+            </div>
+            <div class="card">
+              <img src="../Dashboard Samples/src/assets/logo/elegant-logo.png">
+              <h4>Badan John</h4>
+              <p>tester</p>
+              <div class="per">
+                <table>
+                  <tr>
+                    <td><span>94%</span></td>
+                    <td><span>92%</span></td>
+                  </tr>
+                  <tr>
+                    <td>Month</td>
+                    <td>Year</td>
+                  </tr>
+                </table>
+              </div>
+              <button>Profile</button>
+            </div>
+            <div class="card">
+              <img src="../Applight/images/user1.jpg">
+              <h4>Salina micheal</h4>
+              <p>Ui designer</p>
+              <div class="per">
+                <table>
+                  <tr>
+                    <td><span>85%</span></td>
+                    <td><span>82%</span></td>
+                  </tr>
+                  <tr>
+                    <td>Month</td>
+                    <td>Year</td>
+                  </tr>
+                </table>
+              </div>
+              <button>Profile</button>
+            </div>
+          </div> -->
+  <div class="btn-group">
+    <a class="btn btn-primary" href="#"><i class="fa fa-user fa-fw"></i> User</a>
+    <label for="toggle-dropdown" class="btn btn-primary dropdown-toggle">
+      <span class="fa fa-caret-down" title="Toggle dropdown menu"></span>
+    </label>
+    <input type="checkbox" id="toggle-dropdown">
+    <ul class="dropdown-menu">
+      <li><a href="#"><i class="fa fa-pencil fa-fw"></i> Edit</a></li>
+      <li><a href="#"><i class="fa fa-trash-o fa-fw"></i> Delete</a></li>
+      <li><a href="#"><i class="fa fa-ban fa-fw"></i> Ban</a></li>
+      <li class="divider"></li>
+      <li><a href="#"><i class="fa fa-unlock"></i> Make admin</a></li>
+    </ul>
+  </div>
+</body>
+</html>
